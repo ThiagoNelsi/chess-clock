@@ -118,7 +118,7 @@ function formatTime(milliseconds) {
         useGrouping: false
     }));
 
-    if (minutes == 0 && seconds < 20) return `${twoDigitsStrings[1]}:${twoDigitsStrings[2]}:${twoDigitsStrings[3]}`
+    if (hours === 0 && minutes === 0 && seconds < 20) return `${twoDigitsStrings[1]}:${twoDigitsStrings[2]}:${twoDigitsStrings[3]}`
     
     return `${twoDigitsStrings[0]}:${twoDigitsStrings[1]}:${twoDigitsStrings[2]}`
 
